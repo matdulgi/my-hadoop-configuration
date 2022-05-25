@@ -23,6 +23,6 @@
   </property>
   <property>
     <name>dfs.journalnode.edits.dir</name>
-    <value>/usr/local/data/hdfs/journalnode</value>
+    <value>/opt/data/hdfs/journalnode</value>
   </property>
 </configuration>

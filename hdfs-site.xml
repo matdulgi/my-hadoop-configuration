@@ -19,18 +19,12 @@
 <configuration>
   <property>
       <name>dfs.namenode.name.dir</name>
-      <value>/usr/local/data/hdfs/namenode</value>
+      <value>/opt/data/hdfs/namenode</value>
   </property>
   <property>
       <name>dfs.datanode.data.dir</name>
-      <value>/usr/local/data/hdfs/datanode</value>
+      <value>/opt/data/hdfs/datanode</value>
   </property>
-  <!--
-  <property>
-    <name>dfs.journalnode.edits.dir</name>
-    <value>/usr/local/data/hdfs/journalnode</value>
-  </property>
-  -->
   <property>
       <name>dfs.nameservices</name>
       <value>yrhdfs</value>
