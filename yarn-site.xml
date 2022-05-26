@@ -13,7 +13,71 @@
   limitations under the License. See accompanying LICENSE file.
 -->
 <configuration>
+  <!-- HA configuration -->
+  <property>
+    <name>yarn.resourcemanager.ha.enabled</name>
+    <value>true</value>
+  </property>
+  <property>
+    <name>yarn.resourcemanager.cluster-id</name>
+    <value>yrhdfs</value>
+  </property>
+  <property>
+    <name>yarn.resourcemanager.ha.rm-ids</name>
+    <value>rm1, rm2</value>
+  </property>
+  <property>
+    <name>yarn.resourcemanager.hostname.rm1</name>
+    <value>pi1</value>
+  </property>
+  <property>
+    <name>yarn.resourcemanager.hostname.rm2</name>
+    <value>pi2</value>
+  </property>
+  <property>
+    <name>hadoop.zk.address</name>
+    <value>pi1:2181,pi2:2181,pi3:2181</value>
+  </property>
+  <property>
+		<name>yarn.resourcemanager.webapp.address</name>
+		<value>pi1:8088</value>
+	</property>
+  <property>
+		<name>yarn.resourcemanager.webapp.address.rm1</name>
+		<value>pi1:8088</value>
+	</property>
+	<property>
+		<name>yarn.resourcemanager.webapp.address.rm2</name>
+		<value>pi2:8088</value>
+	</property>
 
-<!-- Site specific YARN configuration properties -->
+
+
+
+  <!-- HA configuration -->
+  <!--
+  <property>
+    <name>yarn.nodemanager.aux-services</name>
+    <value>maprecude_shuffle</value>
+  </property>
+  <property>
+		<name>yarn.nodemanager.aux-services.mapreduce_shuffle.class</name>
+		<value>org.apache.hadoop.mapred.ShuffleHandler</value>
+	</property>
+  -->
+  <property>
+		<name>yarn.nodemanager.local-dirs</name>
+		<value>/opt/data/yran/nodemanager</value>
+	</property>
+	<property>
+		<name>yarn.resourcemanager.fs.state-store.uri</name>
+		<value>/opt/data/yarn/resourcemanager</value>
+	</property>
+  <!--
+  <property>
+    <name>yarn.resourcemanager.resource-tracker.address</name>
+    <value>yrhdfs:8031</value>
+  </property>
+  -->
 
 </configuration>
