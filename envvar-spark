@@ -1,0 +1,4 @@
+# Spark
+export SPARK_HOME=/opt/spark
+
+export PATH=$PATH:$HADOOP_HOME/bin

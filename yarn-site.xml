@@ -67,7 +67,7 @@
   -->
   <property>
 		<name>yarn.nodemanager.local-dirs</name>
-		<value>/opt/data/yran/nodemanager</value>
+		<value>/opt/data/yarn/nodemanager</value>
 	</property>
 	<property>
 		<name>yarn.resourcemanager.fs.state-store.uri</name>

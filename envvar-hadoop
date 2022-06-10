@@ -13,9 +13,5 @@ export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$HADOOP_HOME/lib/native
 # Yarn
 export YARN_CONF_DIR=$HADOOP_HOME/etc/hadoop
 
-
-# Spark
-export SPARK_HOME=/opt/spark
-
-export PATH=$PATH:$HADOOP_HOME/bin:$SPARK_HOME/bin
+export PATH=$PATH:$SPARK_HOME/bin
 
